@@ -65,6 +65,7 @@ nav .social-icons a {
     justify-content: center;
     color: #fff;
     text-align: center;
+    padding: 0 1em;
 }
 
 .hero h1 {
@@ -187,13 +188,37 @@ footer .social-icons a {
     text-decoration: none;
 }
 
-@media (max-width: 600px) {
+/* Media queries for responsive design */
+@media (max-width: 768px) {
     .hero h1 {
-        font-size: 2em;
-        max-width: fit-content;
-    }
-    .header {
-        font-size: 2em; 
-        max-width: fit-content;
+        font-size: 2.5em; /* Adjust font size for tablets */
     }
 }
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2em; /* Adjust font size for small screens */
+        white-space: normal; /* Allow text to wrap if necessary */
+    }
+
+    nav ul li {
+        margin-left: 0.5em; /* Reduce margin for smaller screens */
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Allow nav items to wrap on smaller screens */
+        justify-content: center; /* Center nav items */
+    }
+
+    nav {
+        flex-direction: column; /* Stack nav items vertically on smaller screens */
+        padding: 1em; /* Add padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em; /* Adjust font size for very small screens */
+    }
+}
+
