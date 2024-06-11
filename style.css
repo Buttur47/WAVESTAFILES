@@ -187,8 +187,11 @@ footer .social-icons a {
     text-decoration: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .hero h1 {
+        font-size: 2em; 
+    }
+    .header {
         font-size: 2em; 
     }
 }
