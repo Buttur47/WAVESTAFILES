@@ -14,8 +14,11 @@ body, h1, h2, p, ul, li, img, nav, section, form, input, textarea, button {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: rgb(50, 38, 61);
+    background-image: url('wavesta_gif.gif');
     color: #333;
+    background-repeat: no-repeat;   /* Prevents tiling */
+    background-size: cover;        /* Ensures the image covers the entire background */
+    background-position: center;   /* Centers the image */
 }
 
 header {
